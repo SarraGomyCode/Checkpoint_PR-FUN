@@ -1,0 +1,34 @@
+FUNCTION DOT_PRODUCT(vectors) : INTEGER
+VAR
+    i:INTEGER
+    rlt:INTEGER
+BEGIN
+    FOR i FROM 0 TO vector1.length DO
+        rlt := vector1[i]*vector2[i]
+    END_FOR
+    RETURN rlt ;
+END
+PROCEDURE DOT_PRODUCT (vectors:ARRAY_OF INTEGER)
+VAR
+    vectors : ARRAY_OF INTEGER
+    i,j:INTEGER
+BEGIN
+    FOR i FROM 0 TO vectors.length DO
+    FOR j FROM 0 TO vector1.length DO
+        IF (rlt = 0) THEN
+            write ("les vectors sont orthogonaux") 
+        ELSE 
+            write ("les vectors ne sont pas orthogonaux") 
+        END_IF
+    END_FOR
+    END_FOR
+END
+
+ALGORITHM DOT_PRODUCT
+VAR
+    i,j:INTEGER
+    vectors :ARRAY_OF INTEGER
+    vectors := [[2,3],[3,9],[6,8]]
+BEGIN
+    read(vectors)
+END
